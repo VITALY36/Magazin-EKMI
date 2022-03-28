@@ -1,0 +1,173 @@
+.header_list a {
+  color: rgba(52, 52, 52, 1);
+}
+
+.cont__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  }
+
+.header_spanlist {
+  color:rgba(52, 52, 52, 1);
+}
+
+.header_sublist {
+  position: absolute;
+  box-shadow: 0px 0px 9px 2px
+rgba(0, 0, 0, 0.15);
+  background: #FFFFFF;
+  z-index: 22;
+}
+
+.header_list  {
+  display: flex;
+}
+
+.header_sublist li {
+  padding-left: 11px;
+  padding-right: 10px;
+  font-family: Raleway-Regular;
+  font-size: 17px;
+  line-height: 31.54px;
+  //padding-bottom: 10px;
+}
+
+
+
+.header_sublist li:hover {
+  background: rgba(255, 150, 25, 1);
+}
+
+.header_spanlist_item {
+  font-family: Raleway-Semibold;
+  font-size: 13px;
+  line-height: 19.5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.header_spanlist_item_middle {
+  padding: 0px 62px;
+}
+
+
+
+//===== Выбор языка =================//
+
+.header__lang {
+  display: flex;
+}
+
+.header_spanlist_item{
+  position: relative;
+}
+
+.header__lang_submenu {
+  position: absolute;
+  top: 18px;
+  left: 0px;
+  box-shadow: 0px 4px 9px 2px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(52, 52, 52, 0.7);
+  font-weight: 600;
+  background: #FFFFFF;
+}
+
+.header__lang_submenu li {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.header__lang_submenu li:hover {
+  color:rgba(255, 150, 25, 1);
+}
+
+.lang__item {
+  position: relative;
+}
+
+.lang__item::after {
+  content: url(../img/Vector\ 6.svg);
+  position: absolute;
+  top: 0;
+  left: 23px;
+}
+
+.lang__item:hover::after {
+  transform: rotate(180deg);
+}
+
+.telefon {
+  display: none;
+}
+
+
+// =========================== Адаптив =============================================//
+
+
+@media(max-width: 1050px) {
+
+  .header_spanlist_item_middle {
+    padding: 0px 30px;
+  }
+}
+
+@media(max-width: 968px) {
+
+  .header_sublist {
+    display: none;
+  }
+
+  .nav-hidden {
+    display: none;
+  }
+
+  .header_hidden {
+    display: none;
+  }
+
+  .telefon {
+    display: block;
+    padding-left: 200px;
+  }
+
+  .header_list {
+    padding-top: 0px;
+  }
+
+  .header__logo {
+    padding-top: 0px;
+  }
+
+  .header_logo_svg {
+    width: 92px;
+    height: 34px;
+  }
+
+  .mobile_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media(max-width: 750px) {
+  .telefon {
+    padding-left: 100px;
+  }
+}
+
+@media(max-width: 450px) {
+  .telefon {
+    padding-left: 50px;
+  }
+}
+
+@media(max-width: 340px) {
+  .telefon {
+    padding-left: 25px;
+  }
+}

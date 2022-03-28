@@ -1,0 +1,136 @@
+//===== MOBILE MENU ===========================//
+
+.mobile-nav {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  width: 239px;
+  height: 100%;
+  background-color:#FFFFFF;
+	padding-top: 28px;
+	padding-left: 20px;
+}
+
+.mobile-nav-list {
+  font-size: 17px;
+	line-height: 22.95px;
+}
+.mobile-nav-list a {
+	color:rgba(75, 72, 68, 1);
+}
+
+.mobile-nav-list a:hover {
+	color: #FF9619;
+}
+
+.mobile-nav-list li + li {
+  margin-top: 12px;
+}
+
+.mobile-nav-button {
+	/* Reset for button */
+	//cursor: pointer;
+	//padding: 0;
+	border: none;
+	background: transparent;
+
+	/* Nav icon styles*/
+	position: relative;
+	z-index: 999;
+	// width: 40px; 
+	// height: 30px; 	 
+	height: 23px;
+	width: 25px; 
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.mobile-nav-button__icon {
+	display: block;
+	position: relative;
+	width: 25px;
+	height: 2px;
+	background-color:rgba(52, 52, 52, 1);
+}
+
+.mobile-nav-button__icon::after,
+.mobile-nav-button__icon::before {
+	position: absolute;
+	content: '';
+	width: 25px;
+	height: 2px;
+	background-color:rgba(52, 52, 52, 1);
+    /* Трансформация при закрывании */
+	transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s;
+}
+
+.mobile-nav-button__icon::before {
+	left: 0;
+	top: -10px;
+}
+
+.mobile-nav-button__icon::after {
+	left: 0;
+	top: 10px;
+}
+
+.mobile-nav-button__icon.active {
+	background-color: transparent;
+}
+
+.mobile-nav-button__icon.active::before {
+	transform: rotate(45deg);
+	top: 0;
+    /* Трансформация при открывании */
+	transition: top 0.15s linear, transform 0.15s ease-in 0.15s;
+}
+
+.mobile-nav-button__icon.active::after {
+	transform: rotate(-45deg);
+	top: 0;
+    /* Трансформация при открывании */
+	transition: top 0.15s linear, transform 0.15s ease-in 0.15s;
+}
+
+
+
+//====================== Адаптив ===================//
+
+
+@media(max-width: 968px) {
+
+.mobile-nav {
+	display: none;
+	}
+
+.mobile-nav.active {
+	display: block;
+}
+
+.mobile-nav-button {
+  display: flex;
+	margin-left: 200px;
+  }
+}
+
+@media(max-width: 750px) {
+  .mobile-nav-button	{
+		margin-left: 100px;
+	}
+	}
+
+	@media(max-width: 450px) {
+		.mobile-nav-button	{
+			margin-left: 50px;
+		}
+		}	
+
+		@media(max-width: 340px) {
+			.mobile-nav-button	{
+				margin-left: 25px;
+			}
+			}			

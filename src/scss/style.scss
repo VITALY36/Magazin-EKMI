@@ -1,0 +1,57 @@
+@import "fonts";
+@import "null.scss";
+@import "header.scss";
+@import "burger.scss";
+@import "mainblock1.scss"; 
+@import "slider.scss";
+@import "mainblock2.scss"; 
+
+
+body {
+  font-family: Raleway-Light;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 116px 1fr minmax(80px, 365px);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0px auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  //background-color:aqua;
+}
+
+img {
+  max-width: 100%;
+}  
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media(max-width: 968px) {
+
+  .wrapper {
+  display: grid;
+  grid-template-rows: 64px 1fr 610px;
+  }
+
+  .container {
+    padding-left: 18px;
+    padding-right: 26px;
+  }
+}
+
+@media(max-width: 750px) {
+
+}
