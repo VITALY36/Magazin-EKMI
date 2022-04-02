@@ -1,0 +1,75 @@
+
+
+
+//===  SLIDER mainblock5 ================//
+
+.mainblock5__title {
+  font-family: Raleway-Bold;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 52.5px;
+  padding-bottom: 80px;
+  color: rgba(52, 52, 52, 1);
+}
+
+
+.slider-container {
+  overflow: hidden;
+  max-width: 1074px; 
+  margin: 0 auto;
+}
+
+.slider-track {
+  display: flex;
+  transition: .2s;
+}
+
+.slider-item {
+  padding-right: 7px;
+  align-self: center;
+} 
+
+.slider-buttons {
+  text-align: center;
+}
+
+.slider_mainblock5 {
+  position: relative;
+  margin-bottom: 160px;
+}
+
+.btn-prev,
+.btn-next {
+  position: absolute;
+  cursor: pointer;
+}
+
+
+.btn-prev {
+  bottom: 160px;
+  left: 0;
+}
+
+.btn-next {
+  right: 7px;
+  bottom: 160px;
+}
+
+.slider_item__title {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 15px;
+  font-family: Raleway-Medium;
+  color: rgba(52, 52, 52, 1);
+  font-size: 18px;
+  line-height: 22px;
+}
+
+
+
+//=====================================//
+
+
+
+
+

@@ -1,0 +1,29 @@
+
+
+
+.slider_wrapper2 {
+  //max-width: 1140px;
+  //max-width: 100%;
+  display: flex;
+}
+
+.btn_prev2,
+.btn_next2 {
+  align-self: center;
+  cursor: pointer;
+}
+
+.btn_prev2 {
+  padding-right: 20px;
+}
+
+.btn_next2 {
+  padding-left: 13px;
+}
+
+.slide2 {
+  padding-right: 7px;
+  // width: 270px;
+  // height: 278px;
+}
+

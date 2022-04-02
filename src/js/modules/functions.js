@@ -62,7 +62,7 @@ mobileNavButton.addEventListener('click', function () {
 const prev = document.getElementById('btn_prev');
 const next = document.getElementById('btn_next');
 
-const slides = document.querySelectorAll('.slide');
+const slides = document.querySelectorAll('.slide');  //  
 const dots = document.querySelectorAll('.dot');
 
 
@@ -134,7 +134,7 @@ prev.addEventListener('click', prevSlide);
 
 // ==============Слайдер Swiper=================================================//
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper1', {
 
   slidesPerView: 3,
   spaceBetween: 10,
@@ -175,6 +175,64 @@ const swiper = new Swiper('.swiper', {
   //freeMode: false, // свободный режим (нет фиксированных позиций у слайдов)
   //direction: vertical, // вертикальная прокрутка слайдов
 });
+
+
+//===================================================================================
+
+
+
+
+//===========  Slider mainblock5 =========================//
+
+
+let position = 0; //== отслеживание начального положения скролла
+  const slidesToShow = 4; // ======  сколько элементов показывать
+  const slidesToScroll = 1; // ===    сколько элементов проскроливать
+  const container = document.querySelector('.slider-container');
+  const track = document.querySelector('.slider-track');
+  const btnPrev = document.querySelector('.btn-prev');
+  const btnNext = document.querySelector('.btn-next');
+  const items = document.querySelectorAll('.slider-item');
+  const itemsCount = items.length;
+  const itemWidth = container.clientWidth / slidesToShow; // Разделили ширину контейнера на кол-во слайдов для показа иполучили ширину элемента
+const movePosition = slidesToScroll * itemWidth; 
+  
+items.forEach((item) => {
+  item.style.minWidth = `${itemWidth}px`;
+});
+
+  btnNext.addEventListener('click', () => { //перемещаем слайдер по клику вправо
+    const itemsLeft = itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
+
+    position -= itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
+
+    setPosition();
+    checkBtns();
+  });
+
+
+  btnPrev.addEventListener('click', () => {  // перемещаем слайдер по клику влево
+    const itemsLeft = Math.abs(position) / itemWidth;
+
+    position += itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
+
+    setPosition();
+    checkBtns();
+  });
+  
+  const setPosition = () => { // ф-ция перемещения
+    track.style.transform = `translateX(${position}px)`;
+};
+  
+  
+
+const checkBtns = () => { // ф-ция проверки активности кнопок
+  btnPrev.disabled = position === 0;
+  btnNext.disabled = position <= -(itemsCount - slidesToShow) * itemWidth;
+};
+
+  checkBtns();
+
 
 
 

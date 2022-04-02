@@ -30,7 +30,7 @@
 // ================= СЛАЙДЕР ============================= //
 
 
-.swiper {
+.swiper1 {
   padding-top: 100px;
   margin-left: auto;
   margin-right: auto;
@@ -43,9 +43,6 @@
   flex-direction: column;
 }
 
-// .swiper-slide:hover {
-//   z-index: 1;
-// }
 .swiper-slide img {
   transition: 1s;
 }
