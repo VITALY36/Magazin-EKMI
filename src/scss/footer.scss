@@ -1,0 +1,87 @@
+.footer {
+  background-color:#5B5B5B; 
+}
+
+.container__footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+
+.container__footer a {
+  color: rgba(255, 255, 255, 1);
+  font-family: Raleway-Medium;
+  font-size: 13px;
+  line-height: 19.5px;
+}
+
+.footer__button {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 11px;
+  background-color:rgba(255, 150, 25, 1);
+}
+
+.footer__button:hover {
+  background-color:#FFFFFF;
+}
+
+.footer__button a:hover {
+  color: rgba(255, 150, 25, 1);
+}
+
+.footer__links_row {
+  display: flex;
+  margin-bottom: 33px;
+}
+
+.footer__link1 {
+  margin-right: 15px;
+}
+
+.footer__telefon {
+  margin-bottom: 32px;
+  font-family: OpenSans-SemiBold;
+}
+
+.footer_list li {
+  padding-bottom: 25px;
+}
+
+.footer_list li:hover {
+  opacity: 0.5;
+}
+
+.footer__link1:hover {
+opacity: 0.7;
+cursor: pointer;
+}
+
+.footer__link2:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.footer__tel:hover {
+  opacity: 0.7;
+}
+
+.footer__logo:hover {
+  cursor:pointer;
+  opacity: 0.7;
+}
+
+.footer__but_el {
+  padding-top: 6px;
+  padding-right: 10px;
+  padding-left: 15px;
+}
+
+.footer__svg svg {
+  fill: #FFFFFF;
+}
+
+.footer__svg svg:hover {
+  fill: rgba(255, 150, 25, 1);
+}
+

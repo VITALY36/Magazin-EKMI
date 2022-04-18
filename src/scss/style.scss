@@ -10,6 +10,11 @@
 @import "mainblock5.scss";
 @import "slider2.scss";
 @import "mainblock6.scss";
+@import "mainblock7.scss";
+@import "mainblock8.scss";
+@import "mainblock9.scss";
+@import "mainblock10.scss";
+@import "footer.scss";
 
 
 body {
@@ -22,11 +27,11 @@ body {
 }
 
 .container {
-  max-width: 1200px;
-  // max-width: 1140px;
+  //max-width: 1200px;
+  max-width: 1170px;
   margin: 0px auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  // padding-right: 15px;
+  // padding-left: 15px;
   //background-color:aqua;
 }
 
@@ -45,6 +50,10 @@ img {
   overflow: hidden;
 }
 
+.mn1__liter {
+  color:#FF9619;
+}
+
 @media(max-width: 968px) {
 
   .wrapper {
@@ -60,4 +69,7 @@ img {
 
 @media(max-width: 750px) {
 
+  // .container {
+  //   max-width: 340px;
+  // }
 }

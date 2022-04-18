@@ -1,0 +1,48 @@
+.mainblock8 {
+  display: flex;
+  position: relative;
+}
+
+.mainblock81 {
+  color: #FFFFFF;
+  background-color: rgba(91, 91, 91, 1);
+  width: 1463px;
+}
+
+.mainblock82 {
+  background-color: rgba(204, 178, 163, 1);
+  flex: 1 1 30%;
+  max-height: 390px;
+}
+
+.mainblock81__item {
+  padding-left: 320px; 
+  font-size: 20px;
+  line-height: 27px;
+  padding-bottom: 40px;
+  max-width: 825px;
+  padding-right: 20px;
+}
+
+.mainblock81__title {
+  padding-top: 38px;
+  padding-bottom: 25px;
+  font-family: Raleway-Medium;
+}
+
+.mainblock81__text {
+  font-family: Raleway-Light;
+}
+
+.mainblock81__text1 {
+  padding-bottom: 25px;
+}
+
+.mainblock8__image {
+  position: absolute;
+  top: 14px;
+  left: 820px;
+}
+
+
+

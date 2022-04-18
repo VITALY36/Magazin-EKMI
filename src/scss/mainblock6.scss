@@ -1,9 +1,9 @@
 
-
-
-.mainblock6_image {
-  padding-left: 135px;
+.container {
+  padding-left: 0px;
 }
+
+
 
 .mb6_title1 {
   font-family: Raleway-Medium;
@@ -187,11 +187,49 @@
 .input-block {
   position: absolute;
   top: 19px;
-  left: 736px;
+  left: 601px;
 }
 
 .checkbox_1__span {
   color: rgba(52, 52, 52, 1);
   opacity: 0.5;
   margin-left: 15px;
+}
+
+.mainblock6__letter {
+  position: absolute;
+  top: 16px;
+  left: 530px;
+  z-index: 100;
+}
+
+//=============================================//
+
+@media(max-width:1220px) {
+  .input-block {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-bottom: 20px;
+  }
+  .mainblock6_row {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainblock6_image {
+    padding-left: 0px;
+    margin: auto;
+  }
+  .mainblock6__letter {
+    display: none;
+  }
+}
+
+@media(max-width:750px) {
+  .mainblock6_image {
+    display: none;
+  }
+  .input-block {
+    margin: 57px auto;
+  }
 }
