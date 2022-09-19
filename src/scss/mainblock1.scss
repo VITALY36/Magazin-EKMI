@@ -30,8 +30,6 @@
   padding-right: 30px;
 }
 
-
-
 .mainblock1_button {
   padding: 14px 21px;
   background-color:#FF9619;
@@ -48,7 +46,6 @@
   background-color:#5B5B5B;
 }
 
-
 .mainblock1_title {
   font-size: 20px;
   line-height: 25.5px;
@@ -57,3 +54,40 @@
   padding-bottom: 35px;
   margin-right: -15px;
 }
+
+//===============Адаптив==============//
+
+
+@media(max-width: 968px) {
+
+  .mainblock1_container {
+    display: block;
+  }
+
+  .mainblock1_title {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+
+  .mainblock1_h1 {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    max-width: 570px;
+    padding-right: 0px;
+  }
+
+  .mainblock1_button {
+    padding: 14px 21px;
+    background-color:#FF9619;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 150%;
+    display: inline-block;
+    margin-bottom: 143px;
+  }
+}
+
+

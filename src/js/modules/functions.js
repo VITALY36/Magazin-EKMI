@@ -22,9 +22,14 @@ const headerSpanlist = document.querySelector(".header_spanlist"); // span "Ка
 const headerSublist = document.querySelector(".header_sublist"); // Вложенный список ul
 
 
-headerSpanlist.addEventListener("click", function (evt) {
+headerSpanlist.addEventListener("mouseover", function (evt) {
+  //evt.preventDefault();
+  headerSublist.classList.remove('visually-hidden');
+});
+
+headerSpanlist.addEventListener("mouseout", function (evt) {
   evt.preventDefault();
-  headerSublist.classList.toggle('visually-hidden');
+  headerSublist.classList.add('visually-hidden');
 });
 
 // ============= Язык ============================= //

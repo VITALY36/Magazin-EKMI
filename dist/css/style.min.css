@@ -449,6 +449,36 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: -15px;
 }
 
+@media (max-width: 968px) {
+  .mainblock1_container {
+    display: block;
+  }
+
+  .mainblock1_title {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+
+  .mainblock1_h1 {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    max-width: 570px;
+    padding-right: 0px;
+  }
+
+  .mainblock1_button {
+    padding: 14px 21px;
+    background-color: #FF9619;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 150%;
+    display: inline-block;
+    margin-bottom: 143px;
+  }
+}
 .flex_wrapper {
   width: 100%;
   display: flex;
@@ -1304,10 +1334,26 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 160px;
 }
 
+.mb9__logo img {
+  transition: 0.5s;
+}
+
+.mb9__logo img:hover {
+  transform: scale(1.2);
+}
+
 .mainblock10__row {
   display: flex;
   justify-content: space-between;
   padding-bottom: 160px;
+}
+
+.mainblock10__img img {
+  transition: 1s;
+}
+
+.mainblock10__img img:hover {
+  transform: scale(1.1);
 }
 
 .footer {

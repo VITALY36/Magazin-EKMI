@@ -4,3 +4,11 @@
   padding-top: 130px;
   padding-bottom: 160px;
 }
+
+.mb9__logo img {
+  transition: 0.5s;
+}
+
+.mb9__logo img:hover {
+  transform: scale(1.2);
+}
